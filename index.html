@@ -1,0 +1,675 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Human Body Explorer</title>
+
+    <meta name="description"
+        content="Media pembelajaran interaktif sistem saraf, sistem gerak, gerak sadar, gerak refleks, dan gangguan pada tubuh manusia.">
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <span class="logo-icon">✚</span>
+        <div>
+            <h2>HUMAN BODY</h2>
+            <small>EXPLORER</small>
+        </div>
+    </div>
+
+    <nav class="desktop-nav">
+        <button class="nav-link active" data-page="beranda">Beranda</button>
+        <button class="nav-link" data-page="materi">Materi</button>
+        <button class="nav-link" data-page="kuis">Kuis</button>
+        <button class="nav-link" data-page="tentang">Tentang</button>
+    </nav>
+</header>
+
+
+<main class="main-container">
+
+    <!-- ================= BERANDA ================= -->
+
+    <section class="page active" id="beranda">
+
+        <div class="hero">
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    MEDIA PEMBELAJARAN IPAS KELAS X
+                </span>
+
+                <h1>
+                    Kenali Tubuhmu.<br>
+                    Jelajahi Cara Kerjanya.
+                </h1>
+
+                <p>
+                    Pelajari bagaimana sistem saraf menerima informasi
+                    dan bagaimana tulang, sendi, serta otot bekerja sama
+                    menghasilkan gerakan.
+                </p>
+
+                <button class="primary-btn" data-go="materi">
+                    Mulai Belajar →
+                </button>
+
+            </div>
+
+            <div class="image">
+                <img
+                    src="ilustrasi.png"
+                    alt="Ilustrasi anatomi otak manusia"
+                    onerror="this.style.display='none'"
+                >
+            </div>
+        </div>
+
+
+        <div class="section-heading">
+            <h2>Perjalanan Belajar</h2>
+            <p>Pelajari sistem saraf dan sistem gerak melalui empat tahapan.</p>
+        </div>
+
+
+        <div class="feature-grid">
+
+            <article class="feature-card">
+                <img
+                    src="otak.png"
+                    alt="otak"
+                    width="100" height="100"
+                >
+                <h3>Sistem Saraf</h3>
+                <p>Mengenal otak, sumsum tulang belakang, dan saraf tepi.</p>
+                <button data-go="materi">Pelajari →</button>
+            </article>
+
+            <article class="feature-card">
+                <img
+                    src="sistem gerak.png"
+                    alt="tulang"
+                    width="100" height="100"
+                >
+                <h3>Sistem Gerak</h3>
+                <p>Mempelajari tulang, sendi, dan otot manusia.</p>
+                <button data-go="materi">Pelajari →</button>
+            </article>
+
+            <article class="feature-card">
+                <img
+                    src="stroke.png"
+                    alt="tulang"
+                    width="100" height="100"
+                >
+                <h3>Kelainan & Gangguan</h3>
+                <p>Mengetahui Kelainan apa saja yang terdapat dalam manusia.</p>
+                <button data-go="materi">Pelajari →</button>
+            </article>
+            
+
+            <article class="feature-card">
+                <img
+                    src="blackman.jpg"
+                    alt="tulang"
+                    width="150" height="100"
+                >
+                <h3>Kuis</h3>
+                <p>Menguji pemahaman melalui pertanyaan interaktif.</p>
+                <button data-go="kuis">Mulai Kuis →</button>
+            </article>
+        </div>
+
+    </section>
+
+
+    <!-- ================= MATERI ================= -->
+
+    <section class="page" id="materi">
+
+        <div class="page-heading">
+            <span class="eyebrow">EXPLORE HUMAN BODY</span>
+            <h1>Materi Pembelajaran</h1>
+            <p>Kenali struktur dan fungsi tubuh manusia.</p>
+        </div>
+
+
+
+
+        <div class="material-tabs">
+            <button class="material-tab active" data-material="saraf">Sistem Saraf</button>
+            <button class="material-tab" data-material="gerak">Sistem Gerak</button>
+            <button class="material-tab" data-material="refleks">Gerak Refleks</button>
+            <button class="material-tab" data-material="sadar">Gerak Sadar</button>
+            <button class="material-tab" data-material="kelainan">Kelainan & Gangguan</button>
+        </div>
+
+        <!-- SISTEM SARAF -->
+        <div class="material-content active" id="saraf">
+            <div class="content-card">
+                <span class="pill">SISTEM KOORDINASI</span>
+                <h2>Sistem Saraf Manusia</h2>
+                <p class="material-intro">Sistem saraf menerima rangsangan, mengolah informasi, lalu mengatur respons tubuh.</p>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <img class="material-card-image" src="otak.png" alt="Ilustrasi bagian-bagian otak">
+                        <h3>Otak</h3>
+                        <p><strong>Deskripsi:</strong> pusat koordinasi di dalam tengkorak. Berat dewasa sekitar 1,2–1,5 kg; panjang 16–17 cm dan lebar sekitar 14 cm.</p>
+                        <p><strong>Fakta:</strong> diperkirakan memiliki sekitar 86 miliar neuron.</p>
+                        <p><strong>Cara kerja:</strong> menerima dan mengolah informasi, lalu mengirim perintah melalui impuls saraf.</p>
+                        <p><strong>Gangguan & penanganan:</strong> epilepsi, stroke, dan Parkinson. Penanganan dapat berupa obat, tindakan medis, dan rehabilitasi sesuai diagnosis.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="sumsum.png" alt="Ilustrasi sumsum tulang belakang dan saraf spinal">
+                        <h3>Sumsum Tulang Belakang</h3>
+                        <p><strong>Deskripsi:</strong> jaringan saraf di dalam tulang belakang. Panjang dewasa sekitar 39–45 cm dengan diameter rata-rata sekitar 1 cm.</p>
+                        <p><strong>Fungsi:</strong> menghubungkan otak dengan tubuh dan menjadi pusat beberapa gerak refleks.</p>
+                        <p><strong>Cara kerja:</strong> meneruskan impuls sensorik ke otak dan membawa perintah motorik menuju tubuh.</p>
+                        <p><strong>Gangguan & penanganan:</strong> cedera atau peradangan dapat mengganggu gerak dan sensasi. Penanganan meliputi perawatan medis serta rehabilitasi sesuai penyebab.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="saraf.png" alt="Diagram saraf sensorik dan motorik">
+                        <h3>Saraf Tepi</h3>
+                        <p><strong>Deskripsi:</strong> saraf di luar otak dan sumsum tulang belakang. Terdiri dari 12 pasang saraf kranial dan 31 pasang saraf spinal.</p>
+                        <p><strong>Fungsi:</strong> menghubungkan sistem saraf pusat dengan reseptor, otot, dan organ.</p>
+                        <p><strong>Cara kerja:</strong> saraf sensorik membawa informasi masuk; saraf motorik membawa perintah keluar.</p>
+                        <p><strong>Gangguan & penanganan:</strong> neuropati dapat menyebabkan kebas, kesemutan, atau lemah. Penanganan berfokus pada penyebab, obat sesuai kebutuhan, dan terapi.</p>
+                    </article>
+                </div>
+                <div class="notice">Ukuran merupakan perkiraan anatomi dewasa dan dapat berbeda pada setiap individu.</div>
+            </div>
+        </div>
+
+        <!-- SISTEM GERAK -->
+        <div class="material-content" id="gerak">
+            <div class="content-card">
+                <span class="pill">SISTEM GERAK</span>
+                <h2>Sistem Gerak Manusia</h2>
+                <p class="material-intro">Tulang, sendi, dan otot bekerja sama untuk menopang tubuh dan menghasilkan gerakan.</p>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <img class="material-card-image" src="sistem gerak.png" alt="Ilustrasi kerangka dan otot manusia">
+                        <h3>Tulang</h3>
+                        <p><strong>Deskripsi:</strong> kerangka orang dewasa umumnya memiliki 206 tulang. Tulang paha merupakan tulang terpanjang, sekitar 40–50 cm pada banyak orang dewasa.</p>
+                        <p><strong>Fungsi:</strong> menopang tubuh, melindungi organ, menyimpan mineral, dan membantu pembentukan sel darah.</p>
+                        <p><strong>Cara kerja:</strong> tulang menjadi tuas yang ditarik otot melalui tendon.</p>
+                        <p><strong>Gangguan & penanganan:</strong> fraktur dan osteoporosis. Penanganan dapat berupa imobilisasi, perawatan medis, nutrisi, atau obat sesuai kondisi.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="sendi.png" alt="Ilustrasi persendian dan jaringan penunjang">
+                        <h3>Sendi</h3>
+                        <p><strong>Deskripsi:</strong> tempat bertemunya dua tulang atau lebih. Contohnya sendi engsel pada siku dan sendi peluru pada bahu.</p>
+                        <p><strong>Fungsi:</strong> memungkinkan gerakan dan menjaga hubungan antartulang.</p>
+                        <p><strong>Cara kerja:</strong> bentuk sendi mengatur arah gerak; tulang rawan dan cairan sinovial mengurangi gesekan, sedangkan ligamen membantu kestabilan.</p>
+                        <p><strong>Gangguan & penanganan:</strong> keseleo, dislokasi, dan osteoartritis. Penanganan dapat meliputi pemeriksaan, obat, fisioterapi, atau tindakan medis.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="otot.png" alt="Ilustrasi otot rangka manusia">
+                        <h3>Otot</h3>
+                        <p><strong>Deskripsi:</strong> tubuh memiliki lebih dari 600 otot. Otot rangka melekat pada tulang melalui tendon.</p>
+                        <p><strong>Jenis:</strong> otot rangka, otot polos, dan otot jantung.</p>
+                        <p><strong>Cara kerja:</strong> serat otot berkontraksi dan menarik tulang sehingga terjadi gerakan.</p>
+                        <p><strong>Gangguan & penanganan:</strong> kram, cedera otot, dan tendinitis. Penanganan disesuaikan dengan penyebab, misalnya pemulihan bertahap dan fisioterapi.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <!-- GERAK REFLEKS -->
+        <div class="material-content" id="refleks">
+            <div class="content-card">
+                <span class="pill">MEKANISME GERAK</span>
+                <h2>Gerak Refleks</h2>
+                <p class="material-intro">Gerak refleks adalah respons otomatis dan cepat terhadap rangsangan tertentu.</p>
+                <div class="flow-container">
+                    <div class="flow-box">Reseptor Kulit</div><span>→</span>
+                    <div class="flow-box">Saraf Sensorik</div><span>→</span>
+                    <div class="flow-box">Sumsum Tulang Belakang</div><span>→</span>
+                    <div class="flow-box">Saraf Motorik</div><span>→</span>
+                    <div class="flow-box">Otot</div>
+                </div>
+                <div class="info-grid reflex-grid">
+                    <article class="info-card">
+                        <img class="material-card-image" src="reseptor.png" alt="Ilustrasi reseptor dan saraf">
+                        <h3>1. Reseptor Kulit</h3>
+                        <p>Mendeteksi sentuhan, tekanan, suhu, atau rangsangan yang berpotensi merusak jaringan, lalu memulai sinyal saraf.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="sensorik.png" alt="Ilustrasi jalur saraf sensorik">
+                        <h3>2. Saraf Sensorik</h3>
+                        <p>Membawa impuls dari reseptor menuju sumsum tulang belakang melalui jalur saraf sensorik.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="sumsum.png" alt="Ilustrasi sumsum tulang belakang">
+                        <h3>3. Sumsum Tulang Belakang</h3>
+                        <p>Mengolah sinyal refleks dan meneruskannya ke neuron motorik, sering kali melalui interneuron.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="saraf.png" alt="Ilustrasi jalur saraf motorik">
+                        <h3>4. Saraf Motorik</h3>
+                        <p>Mengirim perintah dari sumsum tulang belakang menuju otot sebagai efektor.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="otot.png" alt="Ilustrasi otot rangka">
+                        <h3>5. Otot</h3>
+                        <p>Menerima sinyal motorik, berkontraksi, lalu menggerakkan anggota tubuh menjauh dari rangsangan.</p>
+                    </article>
+                </div>
+                <h3>Contoh: menarik tangan</h3>
+                <p>Kulit mendeteksi rangsangan panas, impuls menuju sumsum tulang belakang, lalu perintah dikirim ke otot untuk menarik tangan. Informasi juga diteruskan ke otak agar rangsangan disadari.</p>
+                <div class="notice">Pelajari melalui ilustrasi. Jangan menggunakan benda panas atau berbahaya untuk menguji refleks.</div>
+            </div>
+        </div>
+
+        <!-- GERAK SADAR -->
+        <div class="material-content" id="sadar">
+            <div class="content-card">
+                <span class="pill">MEKANISME GERAK</span>
+                <h2>Gerak Sadar</h2>
+                <p class="material-intro">Gerak sadar dilakukan dengan sengaja dan melibatkan pengolahan informasi oleh otak.</p>
+                <div class="flow-container">
+                    <div class="flow-box">Rangsangan</div><span>→</span>
+                    <div class="flow-box">Reseptor</div><span>→</span>
+                    <div class="flow-box">Saraf Sensorik</div><span>→</span>
+                    <div class="flow-box">Otak</div><span>→</span>
+                    <div class="flow-box">Saraf Motorik</div><span>→</span>
+                    <div class="flow-box">Otot</div>
+                </div>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <img class="material-card-image" src="otak.png" alt="Ilustrasi otak memproses informasi">
+                        <h3>1. Otak memproses informasi</h3>
+                        <p>Mata melihat buku. Saraf optik membawa informasi visual ke otak untuk dikenali dan diproses.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="lengan.png" alt="Ilustrasi otot dan tulang lengan">
+                        <h3>2. Perintah gerak dikirim</h3>
+                        <p>Otak merencanakan gerakan dan mengirim perintah melalui saraf motorik menuju otot.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="otot.png" alt="Ilustrasi sistem otot manusia">
+                        <h3>3. Gerakan terjadi</h3>
+                        <p>Otot bahu, lengan, dan tangan bekerja terkoordinasi untuk meraih serta mengambil buku.</p>
+                    </article>
+                </div>
+                <h3>Perbedaan gerak sadar dan refleks</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Aspek</th><th>Gerak sadar</th><th>Gerak refleks</th></tr></thead>
+                        <tbody>
+                            <tr><td>Pengendalian</td><td>Disengaja</td><td>Otomatis</td></tr>
+                            <tr><td>Pemrosesan awal</td><td>Otak</td><td>Sumsum tulang belakang atau batang otak</td></tr>
+                            <tr><td>Contoh</td><td>Mengambil buku</td><td>Menarik tangan dari rangsangan panas</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- KELAINAN DAN GANGGUAN -->
+        <div class="material-content" id="kelainan">
+            <div class="content-card">
+                <span class="pill">KESEHATAN TUBUH</span>
+                <h2>Kelainan Tulang dan Gangguan Saraf</h2>
+                <p class="material-intro">Gangguan tubuh dapat memengaruhi postur, gerak, sensasi, dan koordinasi.</p>
+                <h3>Kelainan tulang belakang</h3>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <img class="material-card-image" src="skoliosis.png" alt="Ilustrasi skoliosis dan kifosis">
+                        <h3>Skoliosis</h3>
+                        <p>Tulang belakang melengkung ke samping seperti huruf C atau S. Penanganan dapat berupa pemantauan, brace, fisioterapi pendukung, atau operasi untuk kasus tertentu.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="kifosis.png" alt="Ilustrasi kifosis">
+                        <h3>Kifosis</h3>
+                        <p>Lengkungan punggung atas tampak berlebihan. Penanganan bergantung penyebab, misalnya latihan terarah, brace, atau tindakan medis.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="lordosis.png" alt="Ilustrasi lordosis">
+                        <h3>Lordosis berlebihan</h3>
+                        <p>Lengkungan pinggang ke arah dalam terlalu besar. Penanganan disesuaikan dengan penyebab dan keluhan, misalnya fisioterapi atau evaluasi medis.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="osteo.png" alt="Ilustrasi tulang manusia">
+                        <h3>Osteoporosis</h3>
+                        <p>Kepadatan tulang menurun sehingga tulang lebih mudah patah. Penanganan meliputi evaluasi medis, nutrisi, aktivitas sesuai kemampuan, dan obat bila diperlukan.</p>
+                    </article>
+                </div>
+                <h3>Gangguan sistem saraf</h3>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <img class="material-card-image" src="neuropati.jpeg" alt="Ilustrasi saraf tepi">
+                        <h3>Neuropati perifer</h3>
+                        <p>Gangguan saraf tepi yang dapat menyebabkan kebas, kesemutan, nyeri, atau lemah. Penanganan berfokus pada penyebab dan terapi gejala.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="epilepsi.jpeg" alt="Ilustrasi otak">
+                        <h3>Epilepsi</h3>
+                        <p>Kondisi dengan kecenderungan kejang berulang akibat aktivitas listrik otak yang tidak normal. Penanganan utama umumnya obat antikejang dari dokter.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="stroke.png" alt="Ilustrasi otak">
+                        <h3>Stroke</h3>
+                        <p>Gangguan aliran darah atau perdarahan di otak. Ini kondisi darurat; penanganan segera dan rehabilitasi dapat diperlukan.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="parkinson.png" alt="Ilustrasi otak">
+                        <h3>Parkinson</h3>
+                        <p>Gangguan saraf yang memengaruhi gerakan, misalnya gerak melambat, kaku, atau tremor. Penanganan dapat berupa obat dan rehabilitasi.</p>
+                    </article>
+                </div>
+                <h3>Gangguan sistem gerak lainnya</h3>
+                <div class="info-grid">
+                    <article class="info-card">
+                        <img class="material-card-image" src="fraktur.png" alt="Ilustrasi kerangka">
+                        <h3>Fraktur</h3>
+                        <p>Tulang retak atau patah. Penanganan dapat berupa bidai, gips, atau operasi sesuai kondisi.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="artritis.jpeg" alt="Ilustrasi sendi">
+                        <h3>Osteoartritis</h3>
+                        <p>Perubahan pada sendi yang dapat menimbulkan nyeri dan kaku. Penanganan dapat mencakup latihan, obat, fisioterapi, atau operasi.</p>
+                    </article>
+                    <article class="info-card">
+                        <img class="material-card-image" src="keseleo.jpeg" alt="Ilustrasi otot dan sendi">
+                        <h3>Keseleo dan cedera otot</h3>
+                        <p>Cedera ligamen atau serat otot. Penanganan bergantung tingkat cedera dan dapat memerlukan pemeriksaan serta fisioterapi.</p>
+                    </article>
+                </div>
+                <div class="notice"><strong>Catatan:</strong> materi ini untuk pembelajaran, bukan diagnosis. Penanganan harus ditentukan tenaga kesehatan sesuai kondisi.</div>
+            </div>
+        </div>
+
+        <!-- EKSPLORASI GAMBAR -->
+
+        <div class="section-heading">
+            <h2>Galeri Anatomi</h2>
+            <p>Pilih gambar untuk melihat detailnya.</p>
+        </div>
+
+        <div class="anatomy-grid">
+
+            <div class="anatomy-card" data-image="brain">
+                <img
+                    src="otak.png"
+                    alt="Otak manusia"
+                >
+                <h3>Otak</h3>
+                <p>Pusat koordinasi tubuh.</p>
+            </div>
+
+            <div class="anatomy-card" data-image="skeleton">
+                <img
+                    src="kerangka.png"
+                    alt="Kerangka manusia"
+                >
+                <h3>Tulang</h3>
+                <p>Penyangga tubuh manusia.</p>
+            </div>
+
+            <div class="anatomy-card" data-image="muscle">
+                <img
+                    src="otot.png"
+                    alt="Anatomi otot manusia"
+                >
+                <h3>Otot</h3>
+                <p>Penggerak aktif tubuh.</p>
+            </div>
+
+            <div class="anatomy-card" data-image="muscle">
+                <img
+                    src="saraf.png"
+                    alt="Anatomi otot manusia"
+                >
+                <h3>Saraf</h3>
+                <p>Jalur komunikasi tubuh.</p>
+            </div>
+
+            <div class="anatomy-card" data-image="muscle">
+                <img
+                    src="sendi.png"
+                    alt="Anatomi otot manusia"
+                >
+                <h3>Sendi</h3>
+                <p>Penghubung antar tulang.</p>
+            </div>
+
+            <div class="anatomy-card" data-image="muscle">
+                <img
+                    src="reseptor.png"
+                    alt="Anatomi otot manusia"
+                >
+                <h3>Reseptor Kulit</h3>
+                <p>Menerima Rangsangan.</p>
+            </div>
+
+            <div class="anatomy-card" data-image="muscle">
+                <img
+                    src="sumsum.png"
+                    alt="Anatomi otot manusia"
+                >
+                <h3>Sumsum Tulang Belakang</h3>
+                <p>Jalur komunikasi saraf.</p>
+            </div>
+
+            <div class="anatomy-card" data-image="muscle">
+                <img
+                    src="sensorik.png"
+                    alt="Anatomi otot manusia"
+                >
+                <h3>Saraf Sensorik</h3>
+                <p>Menerima rangsangan.</p>
+            </div>
+
+            <div class="anatomy-card" data-image="muscle">
+                <img
+                    src="sistem gerak.png"
+                    alt="Anatomi otot manusia"
+                >
+                <h3>Otot dan Tulang</h3>
+                <p>Penyangga dan penggerak tubuh.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= KUIS ================= -->
+
+    <section class="page" id="kuis">
+
+        <div class="page-heading">
+            <span class="eyebrow">TEST YOUR KNOWLEDGE</span>
+            <h1>Kuis Pembelajaran</h1>
+            <p>Uji pemahamanmu mengenai sistem saraf dan sistem gerak.</p>
+        </div>
+
+
+        <div class="quiz-card" id="quiz-container">
+
+            <div class="quiz-top">
+                <span id="question-number">SOAL 1 / 5</span>
+                <span id="current-score">SKOR: 0</span>
+            </div>
+
+            <div class="quiz-progress">
+                <div id="quiz-progress-bar"></div>
+            </div>
+
+            <h2 id="question-text">
+                Memuat pertanyaan...
+            </h2>
+
+            <div id="answer-container"></div>
+
+            <div id="feedback" class="feedback"></div>
+
+            <button id="next-button" class="primary-btn" disabled>
+                Pertanyaan Berikutnya →
+            </button>
+
+        </div>
+
+
+        <div class="result-card hidden" id="result-container">
+
+            <span class="result-icon">🏆</span>
+
+            <h2>Kuis Selesai!</h2>
+
+            <p>Hasil pembelajaranmu:</p>
+
+            <div class="result-score" id="final-score">0</div>
+
+            <p id="result-message"></p>
+
+            <button class="primary-btn" id="restart-button">
+                Ulangi Kuis
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TENTANG ================= -->
+
+    <section class="page" id="tentang">
+
+        <div class="page-heading">
+            <span class="eyebrow">ABOUT THIS WEBSITE</span>
+            <h1>Tentang Website</h1>
+            <p>Digital Human Body Explorer</p>
+        </div>
+
+        <div class="content-card">
+
+            <h2>Human Body Explorer</h2>
+
+            <p>
+                Human Body Explorer merupakan media pembelajaran
+                anatomi manusia berbasis digital yang dirancang
+                untuk membantu siswa memahami sistem saraf dan
+                sistem gerak manusia.
+            </p>
+
+            <p>
+                Website ini menggunakan pendekatan eksplorasi visual,
+                materi interaktif, dan kuis untuk membantu proses
+                pembelajaran IPAS.
+            </p>
+
+            <h3>Identitas Pembelajaran</h3>
+
+            <div class="identity-grid">
+
+                <div>
+                    <small>Satuan Pendidikan</small>
+                    <strong>SMK Raden Umar Said Kudus</strong>
+                </div>
+
+                <div>
+                    <small>Mata Pelajaran</small>
+                    <strong>IPAS</strong>
+                </div>
+
+                <div>
+                    <small>Kelas / Program</small>
+                    <strong>X / PPLG</strong>
+                </div>
+
+                <div>
+                    <small>Alokasi Waktu</small>
+                    <strong>1 Pertemuan × 3 JP</strong>
+                </div>
+
+            </div>
+
+            <h3>Teknologi yang Digunakan</h3>
+
+            <div class="technology-list">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+            </div>
+
+            <div class="notice">
+                Ilustrasi anatomi berasal dari beberapa sumber edukasi daring.
+                Perhatikan lisensi dan atribusi masing-masing gambar
+                apabila website dipublikasikan.
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- MODAL GAMBAR -->
+
+<div class="image-modal" id="image-modal">
+
+    <button class="close-modal" id="close-modal">×</button>
+
+    <img id="modal-image" src="" alt="Detail anatomi">
+
+    <h3 id="modal-title"></h3>
+
+</div>
+
+
+<footer class="footer">
+    <p>HUMAN BODY EXPLORER</p>
+    <small>Media Pembelajaran Interaktif</small>
+</footer>
+
+
+<!-- NAVIGASI MOBILE -->
+
+<nav class="mobile-nav">
+
+    <button class="mobile-link active" data-page="beranda">
+        <span>⌂</span>
+        Beranda
+    </button>
+
+    <button class="mobile-link" data-page="materi">
+        <span>▤</span>
+        Materi
+    </button>
+
+    <button class="mobile-link" data-page="kuis">
+        <span>✓</span>
+        Kuis
+    </button>
+
+    <button class="mobile-link" data-page="tentang">
+        <span>ⓘ</span>
+        Tentang
+    </button>
+
+</nav>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
